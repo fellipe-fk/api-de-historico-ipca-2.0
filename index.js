@@ -1,5 +1,5 @@
 import express from 'express';
-import {retornaColecaoHistoricoInflacao, buscaAnoHistoricoInflacao, buscaIdHistoricoInflacao,calcularReajuste,validacaoErro} from './funcoes/servico.js';
+import {retornaColecaoHistoricoInflacao, buscaAnoHistoricoInflacao, buscaIdHistoricoInflacao,calcularReajuste,validacaoErro} from './servico.js';
 
 const app = express();
 
