@@ -1,4 +1,4 @@
-import historicoInflacao from '../dados/dados.js';
+import historicoInflacao from './dados.js';
 
 export const retornaColecaoHistoricoInflacao = () => {
     return historicoInflacao;
