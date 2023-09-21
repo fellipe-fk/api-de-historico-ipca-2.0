@@ -41,7 +41,7 @@ app.get('/historicoIPCA/:id', (req, res) => {
 app.get('/historicoIPCA', (req, res) => {
     const ano = parseInt(req.query.ano);
     if(isNaN(ano)){
-        res.status(404).json({erro: 'valor passado invalido'});
+        res.json(retornaColecaoHistoricoInflacao());
     }else{
         const filtraAno = buscaAnoHistoricoInflacao(ano);
         if (filtraAno.length > 0) {
